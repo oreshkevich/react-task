@@ -1,0 +1,18 @@
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.comments-users li {
+  font-weight: 600;
+}
+
+.comments-number {
+  color: red;
+}
+
+.comments-users li span {
+  font-weight: 400;
+}

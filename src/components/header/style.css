@@ -1,7 +1,3 @@
-.header-nav {
-  padding-left: 20px !important;
-}
-
 .logo {
   font-size: 2rem;
   color: white;
@@ -17,4 +13,8 @@
 
 a.active {
   color: #bd1c41;
+}
+
+.link span {
+  margin: 20px;
 }

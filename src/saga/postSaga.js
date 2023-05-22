@@ -5,7 +5,7 @@ const fetchPostsFromApi = () =>
   fetch('https://jsonplaceholder.typicode.com/posts');
 
 function* fetchPostWorker() {
-  yield delay(500);
+  yield delay(5000);
   const data = yield call(fetchPostsFromApi);
   const json = yield call(() => new Promise((res) => res(data.json())));
   yield put(setPosts(json));

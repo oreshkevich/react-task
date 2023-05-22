@@ -3,6 +3,7 @@ import AboutMe from './components/aboutMe';
 import Header from './components/header';
 import Container from 'react-bootstrap/Container';
 import {HashRouter, Route, Routes} from 'react-router-dom';
+import UserDetails from './components/userDetails';
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
           <Routes>
             <Route path='/' element={<CardPost />} />
             <Route path='/about' element={<AboutMe />} />
-            <Route path='/user' element={<AboutMe />} />
+            <Route path='/user/:id' element={<UserDetails />} />
           </Routes>
         </Container>
       </div>
